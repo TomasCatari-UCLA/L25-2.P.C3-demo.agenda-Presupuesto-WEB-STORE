@@ -50,7 +50,7 @@ export default class Cl_mRegistro {
     return this._precio;
   }
   error(): string | false {
-    // Validar tienda
+    // Validar nombre de la tienda 
     if (this._tienda.length === 0 ) {return "El nombre de la tienda no puede estar vacío.";
     } 
     // Validar ubicación
