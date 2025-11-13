@@ -16,13 +16,13 @@ export default class Cl_mRegistro {
         return this._tienda;
     }
     set ubicacion(ubicacion) {
-        this._ubicacion = ubicacion;
+        this._ubicacion = ubicacion.toUpperCase();
     }
     get ubicacion() {
         return this._ubicacion;
     }
     set repuesto(repuesto) {
-        this._repuesto = repuesto;
+        this._repuesto = repuesto.toUpperCase();
     }
     get repuesto() {
         return this._repuesto;
