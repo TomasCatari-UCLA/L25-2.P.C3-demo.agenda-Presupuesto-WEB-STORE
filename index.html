@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página y de la vista previa (WhatsApp) -->
+    <title>AgendaPresupuesto</title>
+    <meta property="og:title" content="Mi Agenda de presupuesto" />
+    <!-- Descripción corta y atractiva -->
+    <meta property="og:description" content="Agenda de presupuesto para repuesto de mi carro" />
+    <!-- Imagen que se muestra en WhatsApp (logo o imagen destacada, 800x418 px recomendado) -->
+    <meta property="og:image" content="https://agenda-presupuesto-array.vercel.app/resources/logo.png" />
+    <!-- URL del proyecto -->
+    <meta property="og:url" content="https://agenda-presupuesto-array.vercel.app" />
+    <!-- Tipo de contenido -->
+    <meta property="og:type" content="website" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./resources/favicon.png">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css?v251103-1750" />
+</head>
+<body>
+    <h3 style="width: 320px;">Mi Agenda de presupuesto</h3>
+    <section id="agenda">
+        <div>
+            <button id="agenda_btAgregarRegistro">Agregar registro</button>
+        </div>
+    </section>
+    <section style="font-size: 10px;">
+        <h3>Tienda de respuestos para automoviles registrada</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th style="width: 100px;">Tienda</th>
+                    <th style="width: 80px;">Ubicación</th>
+                    <th style="width: 100px;">Repuesto</th>
+                    <th style="width: 100px;">Precio</th>
+                </tr>
+            </thead>
+            <tbody id="agenda_divRegistro"> </tbody>
+        </table>
+    </section>
+    <script type="module">
+        import Cl_index from "./dist/Cl_index.js";
+        new Cl_index()
+    </script>
+</body>
+
+</html>
